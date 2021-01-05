@@ -365,6 +365,7 @@
                             saveGame();
                             room.copyToClipboard();
                             popup('Shared link copied to the clipboard!');
+                            qr.show()
                             break;
                         case KEY.SAVE:
                             saveGame();
@@ -465,4 +466,4 @@
 
     // initial app state
     setState(app.state.eden);
-})($, document, event, env, gameList, input, KEY, log, room, settings, socket, stats, utils);
+})($, document, event, env, gameList, input, KEY, log, room, settings, socket, stats, utils, qr);
